@@ -136,14 +136,16 @@
             <form class="page3-input-block">
                 <div class="input">
                     <p class="input-title">Name</p>
-                    <input type="text" class="input-area" placeholder="What is your name:" id="page3-name">
+                    <input type="text" pattern="[A-Za-zА-Яа-яЁё\s]{2,25}" class="input-area page3-input-area"
+                        placeholder="What is your name:" id="page3-name">
                 </div>
                 <div class="input page3-input-phone">
                     <p class="input-title page3-input-title-normal">Phone</p>
                     <p class="input-title page3-input-title-mobile">Number</p>
-                    <input type="text" class="input-area" placeholder="Your phone number:" id="page3-phone">
+                    <input type="tel" pattern="[0-9\s]{6,}" class="input-area page3-input-area"
+                        placeholder="Your phone number:" id="page3-phone">
                 </div>
-                <button class="button page3-button-submit" id="page3-btn-submit">submit</button>
+                <button type="submit" class="button page3-button-submit" id="page3-btn-submit">submit</button>
                 <div class="page3-agree">
                     <label class="agree-label">
                         <input type="checkbox" class="agree-checkbox page3-agree-checkbox">
@@ -250,18 +252,19 @@
                             departure of the measurer</p>
                         <form action="" class="page4-input">
                             <div class="input">
-                                <p class="input-title input-title-page4">Name</p>
-                                <input type="text" class="input-area page4-input-area" placeholder="What is your name:"
+                                <p class="input-title page4-input-title">Name</p>
+                                <input type="text" pattern="[A-Za-zА-Яа-яЁё\s]{2,25}"
+                                    class="input-area page4-input-area" placeholder="What is your name:"
                                     id="page4-name">
                             </div>
                             <div class="input">
-                                <p class="input-title input-title-page4">Phone</p>
-                                <input type="text" class="input-area page4-input-area" placeholder="Your phone number:"
-                                    id="page4-phone">
+                                <p class="input-title page4-input-title">Phone</p>
+                                <input type="tel" pattern="[0-9\s]{6,}" class="input-area page4-input-area"
+                                    placeholder="Your phone number:" id="page4-phone">
                             </div>
                             <div class="input">
-                                <p class="input-title input-title-page4">Email</p>
-                                <input type="text" class="input-area page4-input-area page4-input-area-last"
+                                <p class="input-title page4-input-title">Email</p>
+                                <input type="email" class="input-area page4-input-area page4-input-area-last"
                                     placeholder="Your email" id="page4-email">
                             </div>
                             <div class="page4-agree">
@@ -274,7 +277,7 @@
                                         data</span>
                                 </label>
                             </div>
-                            <button class="button page4-button-call">Call the measurer</button>
+                            <button type="submit" class="button page4-button-call">Call the measurer</button>
                         </form>
                     </div>
                     <div class="block-pig">
@@ -451,18 +454,19 @@
                 <form action="" class="page6-input">
                     <div class="input">
                         <p class="input-title page6-input-title">Name</p>
-                        <input type="text" class="input-area page6-input-area" placeholder="What is your name:"
-                            id="name-page6">
+                        <input type="text" pattern="[A-Za-zА-Яа-яЁё\s]{2,25}" class="input-area page6-input-area"
+                            placeholder="What is your name:" id="page6-name">
                     </div>
                     <div class="input">
                         <p class="input-title page6-input-title page6-input-area-phone">Phone</p>
-                        <input type="text" class="input-area page6-input-area page6-input-area-phone"
-                            placeholder="Your phone number:" id="phone-page6">
+                        <input type="tel" pattern="[0-9\s]{6,}"
+                            class="input-area page6-input-area page6-input-area-phone" placeholder="Your phone number:"
+                            id="page6-phone">
                     </div>
                     <div class="input">
                         <p class="input-title page6-input-title page6-input-title-last">Questions</p>
                         <input type="text" class="input-area page6-input-area page6-input-area-last"
-                            placeholder="I want to know:" id="question-page6">
+                            placeholder="I want to know:" id="page6-question">
                     </div>
                     <div class="page6-agree">
                         <label class="agree-label">
